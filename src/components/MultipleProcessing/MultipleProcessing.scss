@@ -1,0 +1,27 @@
+.board {
+    &__input-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        justify-items: center;
+        margin-top: 20px;
+
+
+    }
+
+    &__outputs {
+        margin: 0 50px 50px 50px;
+        min-height: 300px;
+
+        span {
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .notice {
+            text-align: center;
+            margin-top: 150px;
+            opacity: 0.9;
+        }
+    }
+}

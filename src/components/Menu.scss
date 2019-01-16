@@ -1,0 +1,31 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 75%;
+
+    &__item {
+        width: 300px;
+        height: 200px;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: all .3s;
+
+        .item__description {
+            margin: 0 15px;
+        }
+
+        &:hover {
+            background-color: lighten(#282c34, 10%);
+
+            .item__title {
+                text-decoration: underline;
+            }
+        }
+    }
+}

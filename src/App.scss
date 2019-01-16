@@ -1,0 +1,55 @@
+.App {
+  background-color: #282c34;
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+  overflow-x: hidden;
+
+
+  &__headline {
+    margin: 0;
+  }
+
+  &-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+    float: left;
+  }
+
+  &-header {
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+input {
+  width: 270px;
+  padding: 4px 11px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, .65);
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
