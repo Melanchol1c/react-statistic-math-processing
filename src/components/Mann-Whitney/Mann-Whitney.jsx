@@ -229,7 +229,6 @@ class MannWhitney extends React.Component {
     return (
       <Fragment>
         <div className="mann-board__names">
-          <h2>N</h2>
           {this.methodCheck(U, [n, m]) ? (
             <div className="mann-notice">
               Гипотеза об однородности выборочных данных подтверждается
@@ -243,52 +242,54 @@ class MannWhitney extends React.Component {
               </div>
             </div>
           )}
-          <h2>M</h2>
-        </div>
-        <div className="mann-board__input-wrapper">
-          <div className="form-group">
-            <p>Min</p>
-            <input
-              type="number"
-              onChange={this.handleInputChange}
-              value={nMin}
-              name="nMin"
-            />
-          </div>
-          <div className="form-group">
-            <p>Max</p>
-            <input
-              type="number"
-              onChange={this.handleInputChange}
-              value={nMax}
-              name="nMax"
-            />
-          </div>
-          <span> |</span>
-          <div className="form-group">
-            <p>Min</p>
-            <input
-              type="number"
-              onChange={this.handleInputChange}
-              value={mMin}
-              name="mMin"
-            />
-          </div>
-          <div className="form-group">
-            <p>Max</p>
-            <input
-              type="number"
-              onChange={this.handleInputChange}
-              value={mMax}
-              name="mMax"
-            />
-          </div>
         </div>
         <div className="mann-board__body">
           <div className="n-section">
+            <h2>N</h2>
+            <div className="mann-board__input-wrapper">
+              <div className="form-group">
+                <p>Min</p>
+                <input
+                  type="number"
+                  onChange={this.handleInputChange}
+                  value={nMin}
+                  name="nMin"
+                />
+              </div>
+              <div className="form-group">
+                <p>Max</p>
+                <input
+                  type="number"
+                  onChange={this.handleInputChange}
+                  value={nMax}
+                  name="nMax"
+                />
+              </div>
+            </div>
             <span>Выборка N:</span> {n.map(n => `${n} `)}
           </div>
           <div className="m-section">
+            <h2>M</h2>
+            <div className="mann-board__input-wrapper">
+              <div className="form-group">
+                <p>Min</p>
+                <input
+                  type="number"
+                  onChange={this.handleInputChange}
+                  value={mMin}
+                  name="mMin"
+                />
+              </div>
+              <div className="form-group">
+                <p>Max</p>
+                <input
+                  type="number"
+                  onChange={this.handleInputChange}
+                  value={mMax}
+                  name="mMax"
+                />
+              </div>
+            </div>
             <span>Выборка M:</span> {m.map(m => `${m} `)}
           </div>
         </div>

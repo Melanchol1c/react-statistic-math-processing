@@ -1,12 +1,10 @@
 .board {
     &__input-wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
         grid-gap: 20px;
         justify-items: center;
         margin-top: 20px;
-
-
     }
 
     &__outputs {
